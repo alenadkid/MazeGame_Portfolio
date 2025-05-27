@@ -35,4 +35,6 @@ build/
 .vscode/
 
 ### Mac OS ###
-.DS_Store
+.DS_Storetarget/
+!target/generated-sources/openapi
+!target/generated-sources/openapi/**

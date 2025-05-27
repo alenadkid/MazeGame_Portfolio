@@ -11,10 +11,10 @@ public class StartupBean {
     @PostConstruct
     public void init() {
         DefaultApi defaultApi = new DefaultApi();
-
+    
         GameInputDto gameInput = new GameInputDto();
         gameInput.setGroupName("Steven Bethäuser und Alena Ergin");
-
+        System.out.println("Spiel von: " + gameInput.getGroupName());
         GameDto response = defaultApi.gamePost(gameInput);
         System.out.println("Spiel wurde erfolgreich gestartet. GameID lautet: " + response.getGameId());
 

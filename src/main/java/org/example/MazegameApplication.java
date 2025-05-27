@@ -39,7 +39,7 @@ public class MazegameApplication {
                 GameDto game = api.gameGameIdGet(gameId);
                 String status = game.getStatus().toString();
                 if (status.equals("success")) {
-                    System.out.println("Ziel erreicht! Super :");
+                    System.out.println("Ziel erreicht! Super :)");
                     break;
                 } else if (status.equals("failed")) {
                     System.out.println("Ohje, leider verloren :( *mario sound*");
